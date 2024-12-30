@@ -2,54 +2,22 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-03T23:06:57 IST" name="Default suite" finished-at="2024-12-03T23:07:02 IST" duration-ms="4990">
+  <suite started-at="2024-12-09T01:13:05 IST" name="Default suite" finished-at="2024-12-09T01:13:08 IST" duration-ms="2682">
     <groups>
     </groups>
-    <test started-at="2024-12-03T23:06:57 IST" name="Default test" finished-at="2024-12-03T23:07:02 IST" duration-ms="4990">
-      <class name="basicsofapi.TestPostUsingdifferentways">
-        <test-method signature="testPostUsingEternalFile()[pri:1, instance:basicsofapi.TestPostUsingdifferentways@4c583ecf]" started-at="2024-12-03T23:06:57 IST" name="testPostUsingEternalFile" finished-at="2024-12-03T23:07:02 IST" duration-ms="4892" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2024-12-09T01:13:05 IST" name="Default test" finished-at="2024-12-09T01:13:08 IST" duration-ms="2682">
+      <class name="day4.ParsingJsonResponseData">
+        <test-method signature="testJsonObjectBody2()[pri:0, instance:day4.ParsingJsonResponseData@368f2016]" started-at="2024-12-09T01:13:05 IST" name="testJsonObjectBody2" finished-at="2024-12-09T01:13:08 IST" duration-ms="2598" status="FAIL">
+          <exception class="org.json.JSONException">
             <message>
-              <![CDATA[1 expectation failed.
-JSON path name doesn't match.
-Expected: Scott
-  Actual: null
-]]>
+              <![CDATA[A JSONObject text must begin with '{' at 1 [character 2 line 1]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-JSON path name doesn't match.
-Expected: Scott
-  Actual: null
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
-at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
-at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-at basicsofapi.TestPostUsingdifferentways.testPostUsingEternalFile(TestPostUsingdifferentways.java:129)
+              <![CDATA[org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+at org.json.JSONTokener.syntaxError(JSONTokener.java:503)
+at org.json.JSONObject.<init>(JSONObject.java:213)
+at org.json.JSONObject.<init>(JSONObject.java:430)
+at day4.ParsingJsonResponseData.testJsonObjectBody2(ParsingJsonResponseData.java:44)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -78,11 +46,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.json.JSONException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPostUsingEternalFile -->
-      </class> <!-- basicsofapi.TestPostUsingdifferentways -->
+        </test-method> <!-- testJsonObjectBody2 -->
+      </class> <!-- day4.ParsingJsonResponseData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
